@@ -1,0 +1,422 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* 1. ROOT */
+/* line 3, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_root.scss */
+html {
+  overflow-y: scroll;
+  background: white;
+}
+
+/* line 7, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_root.scss */
+body {
+  margin: 0 auto;
+  padding: 24px 0;
+  width: 90%;
+  font: 100%/1.4 Cambria, Georgia, Times, "Times New Roman";
+  color: #282828;
+  background-color: transparent;
+}
+
+/* 2.HEADINGS */
+/* line 8, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-weight: bold;
+}
+
+/* line 12, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h1 {
+  margin-bottom: .75em;
+  font-size: 3em;
+  /* 48 / 16 = 3 */
+  line-height: 1.2;
+}
+
+/* line 17, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h2 {
+  margin-bottom: .75em;
+  font-size: 2em;
+  /* 36 / 16 = 2 */
+  line-height: 1.2;
+}
+
+/* line 22, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h3 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  /* 24 / 16 = 1.5 */
+  line-height: 1.3;
+}
+
+/* line 27, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h4 {
+  margin-bottom: 1.25em;
+  font-size: 1.25em;
+  /* 20 / 16 = 1.25 */
+  line-height: 1.25;
+}
+
+/* line 32, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h5 {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  /* 16 / 16 = 1 */
+}
+
+/* line 36, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+h6 {
+  font-size: 1em;
+  /* 16 / 16 = 1 */
+}
+
+/* 3.TYPOGRAPHY */
+/* line 45, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  /* 16 / 16 = 1 */
+}
+
+/* line 50, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+ul,
+ol {
+  margin: 0 0 1.5em -24px;
+  padding-left: 24px;
+}
+
+/* line 54, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 57, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 61, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+li ul,
+li ol {
+  margin: 0;
+  font-size: 1em;
+  /* 16 / 16 = 1 */
+}
+
+/* line 66, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+dl,
+dd {
+  margin-bottom: 1.5em;
+}
+
+/* line 69, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+dt {
+  font-weight: normal;
+}
+
+/* line 72, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+blockquote {
+  margin: 0 0 1.5em -24px;
+  padding-left: 24px;
+  border-left: 1px solid #c8c8c8;
+  font-style: italic;
+}
+
+/* line 81, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 86, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 90, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+i,
+em {
+  font-style: italic;
+}
+
+/* line 94, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+sup,
+sub {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+}
+
+/* line 99, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 102, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 105, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+address {
+  font-style: normal;
+}
+
+/* line 108, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+pre {
+  margin-bottom: 1.5em;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 115, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+pre,
+code {
+  font: .875em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+
+/* line 119, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+small {
+  font-size: 1em;
+  /* 16 / 16 = 1 */
+}
+
+/* 4.LINKS */
+/* line 125, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+a,
+a:visited {
+  outline: none;
+  color: #1777af;
+  text-decoration: none;
+}
+
+/* line 130, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+a:hover {
+  outline: none;
+  color: #282828;
+  text-decoration: underline;
+}
+
+/* line 136, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_typography.scss */
+a:active,
+a:focus {
+  outline: none;
+  color: black;
+}
+
+/* 5.FIGURES & IMAGES */
+/* line 3, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+figure {
+  margin-bottom: 1.5em;
+}
+
+/* line 8, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+figure img,
+figure object,
+figure embed {
+  margin-bottom: .75em;
+  max-width: 100%;
+}
+
+/* line 12, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+figcaption {
+  display: block;
+  font-weight: normal;
+}
+
+/* 6.TABLES */
+/* line 18, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.4em;
+  width: 100%;
+  font-size: .875em;
+  /* 14 / 16 = .875 */
+}
+
+/* line 25, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 28, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+th, td, caption {
+  padding: .25em 10px .25em 5px;
+}
+
+/* line 31, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+tfoot {
+  font-style: italic;
+}
+
+/* line 34, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_tables_fig_img.scss */
+caption {
+  background-color: transparent;
+}
+
+/* 14.GLOBAL OBJECTS */
+/* line 3, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 7, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 13, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* 15.VENDOR-SPECIFIC */
+/* line 18, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 22, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+a:link {
+  -webkit-tap-highlight-color: #349edb;
+}
+
+/* line 25, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+::-webkit-selection {
+  background: #1777af;
+  color: #fafafa;
+  text-shadow: none;
+}
+
+/* line 30, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+::-moz-selection {
+  background: #1777af;
+  color: #fafafa;
+  text-shadow: none;
+}
+
+/* line 35, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+::selection {
+  background: #1777af;
+  color: #fafafa;
+  text-shadow: none;
+}
+
+/* input[type=search] {
+-webkit-appearance : none; }
+
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+display : none; } */
+/* line 47, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+::-webkit-input-placeholder {
+  padding: 10px;
+  font-size: .875em;
+  line-height: 1.4;
+}
+
+/* line 52, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+input:-moz-placeholder {
+  padding: 10px;
+  font-size: .875em;
+  line-height: 1.4;
+}
+
+/* line 58, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.ie7 img,
+.iem7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 63, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+div,
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Non-semantic helper classes */
+/* Image replacement */
+/* line 72, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* Hide for screenreaders and visual browsers */
+/* line 81, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Hide visually */
+/* line 86, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.visuallyhidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  border: 0;
+}
+
+/* Allow an element to be focusable via keyboard  */
+/* line 98, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+  margin: 0;
+  width: auto;
+}
+
+/* Hide but maintain layout */
+/* line 107, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* 16.TEMPLATE SPECIFICS */
+/* line 112, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+#goog-fixurl ul {
+  list-style-type: none;
+}
+
+/* line 115, /home/gcallaghan/webapps/personal_site/src/personal_site/django_one_web/resources/scss/sass/partials/_common.scss */
+#goog-fixurl input {
+  margin-bottom: 1.5em;
+}
