@@ -8,14 +8,18 @@ Django One web is an attempt to provide a tempalting platform for django
 projects using future proof best practices and mobile first design. 
 
 Based on:
-Paul Irish's html5 boilerplate : http://html5boilerplate.com
-Andy Clark's 320 and up : http://stuffandnonsense.co.uk/projects/320andup/
+
+* Paul Irish's html5 boilerplate : http://html5boilerplate.com
+* Andy Clark's 320 and up : http://stuffandnonsense.co.uk/projects/320andup/
 
 Installation
 ------------
 
-I'm working on that. It will go something like downloading, placing somewhere
-on your python path, and adding to your INSTALLED_APPS in settings.py
+I'm working on that. It will go something like:
+
+* Download
+* Placing somewhere on your python path 
+* Add to your INSTALLED_APPS in settings.py
 
 Requirements
 ------------
