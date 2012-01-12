@@ -1,4 +1,4 @@
-from django.conf import settings
+from django-one-web import settings
 
 def media(request):
     '''
