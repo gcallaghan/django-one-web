@@ -31,25 +31,25 @@ Modified by Grant Callaghan http://grantcallaghan.com
 <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
 {% block style %}
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ 320_MEDIA_URL }}css/style.css">
-<link rel="stylesheet" media="print" href="{{ 320_MEDIA_URL }}css/print.css">
+<link rel="stylesheet" href="{{ ONEWEB_MEDIA_URL }}css/style.css">
+<link rel="stylesheet" media="print" href="{{ ONEWEB_MEDIA_URL }}css/print.css">
 <!-- For progressively larger displays -->
-<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
-<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
-<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
-<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
+<link rel="stylesheet" media="only screen and (min-width: 480px)" href="{{ ONEWEB_MEDIA_URL }}css/480.css">
+<link rel="stylesheet" media="only screen and (min-width: 600px)" href="{{ ONEWEB_MEDIA_URL }}css/600.css">
+<link rel="stylesheet" media="only screen and (min-width: 768px)" href="{{ ONEWEB_MEDIA_URL }}css/768.css">
+<link rel="stylesheet" media="only screen and (min-width: 992px)" href="{{ ONEWEB_MEDIA_URL }}css/992.css">
 <!-- For Retina displays -->
-<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="css/2x.css">
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="{{ ONEWEB_MEDIA_URL }}css/2x.css">
 {% endblock %}
 {% block extrastyle %}
 {% endblock %}
 <!--[if (lt IE 9) & (!IEMobile)]>
-<script src="js/libs/selectivizr-min.js"></script>
+<script src="{{ ONEWEB_MEDIA_URL }}js/libs/selectivizr-min.js"></script>
 <![endif]-->
 
 {% block javascript_libs %}
 <!-- JavaScript -->
-<script src="js/libs/modernizr-2.0.6.min.js"></script>
+<script src="{{ ONEWEB_MEDIA_URL }}js/libs/modernizr-2.0.6.min.js"></script>
 {% endblock %}
 {% block extrajavascript_libs %}
 {% endblock %}
@@ -106,13 +106,13 @@ Modified by Grant Callaghan http://grantcallaghan.com
 
   {% block scripts %}
   <!-- Scripts -->
-  <script src="js/libs/jquery-1.6.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/mylibs/helper.js"></script>
+  <script src="{{ ONEWEB_MEDIA_URL }}js/libs/jquery-1.6.2.min.js"></script>
+  <script src="{{ ONEWEB_MEDIA_URL }}js/plugins.js"></script>
+  <script src="{{ ONEWEB_MEDIA_URL }}js/script.js"></script>
+  <script src="{{ ONEWEB_MEDIA_URL }}js/mylibs/helper.js"></script>
 
   <!--[if (lt IE 9) & (!IEMobile)]>
-  <script src="js/libs/imgsizer.js"></script>
+  <script src="{{ ONEWEB_MEDIA_URL }}js/libs/imgsizer.js"></script>
   <![endif]-->
 
   <script>
@@ -122,7 +122,7 @@ Modified by Grant Callaghan http://grantcallaghan.com
   // Respond.js
   yepnope({
     test : Modernizr.mq('(only all)'),
-    nope : ['js/libs/respond.min.js']
+    nope : ['{{ ONEWEB_MEDIA_URL }}js/libs/respond.min.js']
   });
   </script>
 
