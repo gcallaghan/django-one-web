@@ -1,0 +1,3 @@
+[submodule "oneweb/resources/normalize.css"]
+	path = oneweb/resources/normalize.css
+	url = git://github.com/necolas/normalize.css.git
