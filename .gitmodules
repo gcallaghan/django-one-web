@@ -1,0 +1,3 @@
+[submodule "oneweb/resources/320andup"]
+	path = oneweb/resources/320andup
+	url = git@github.com:gcallaghan/320andup.git
